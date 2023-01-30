@@ -6,8 +6,6 @@ using UnityEngine;
 public class Grid : MonoBehaviour
 {
 
-    public int gridWidth;
-    public int gridHeight;
 
     public int columns = 0;
     public int rows = 0;
@@ -22,17 +20,15 @@ public class Grid : MonoBehaviour
 
 
     private Vector2 offSet = new Vector2(0.0f, 0.0f);
-    private List<GameObject> gridSquares = new List<GameObject>();
+    public List<GameObject> gridSquares = new List<GameObject>();
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        CreateGrid();
+        //CreateGrid();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
